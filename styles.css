@@ -99,19 +99,22 @@ justify-content: flex-end;
 
     /* About */
     .about{
-      display: flex;
       padding-top: 60px;
       padding-bottom: 60px;
       background-color: #f6f6f6;
+      justify-content: center;
     }
     .about h1{
       color: var(--main-color);
       margin: 0 40px;
+      text-align: center;
    
     }
     .about p{
       color:var(--secondary-color);
       height: 20px;
+      margin-right: 40px;
+      text-align: center;
     }
 
 
@@ -121,6 +124,31 @@ justify-content: flex-end;
 
 
     /* Contact */
+    .contact{
+      background-color: var(--main-color);
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+    }
+    .contact .img{
+      position: absolute;
+      width: 175.9px;
+      height: 109.55px;
+      
+      float:right;
+      
+      opacity: 0.2;
+
+    }
+    .contact .info{
+      color: var(--secondary-color);
+      margin: 0 40px;
+      text-align: center;
+    }
+
+ 
+
 
 
 
