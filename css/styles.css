@@ -4,9 +4,10 @@
     --section-background: #f6f6f6;
     
   }
-  *{
+  body{
     padding: 0;
     margin: 0;
+
   }
 
   html{
@@ -49,10 +50,11 @@
         height: 80px;
     }
     header nav{
-flex: 1;
-display: flex;
-align-items: center;
-justify-content: flex-end;
+       flex: 1;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+
     }
     header nav ul{
         display: flex;
@@ -70,10 +72,10 @@ justify-content: flex-end;
     /* Landing */
     .landing
     {
-      background-image: url(images/bg.jpg);
+      background-image: url('/images/bg.jpg');
       background-size: cover;
       background-position: center;
-      height:100vh;
+      height:70vh;
       
     }
 
@@ -121,7 +123,54 @@ justify-content: flex-end;
 
 
     /* Services */
+    .services{
+      padding-top: 20px;
+      padding-bottom: 40px;
+      background-color: #ffffff;
+    }
+    .services .container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    }
 
+
+
+    .services h1{
+      text-align: center;
+      color: var(--main-color);
+    }
+
+
+    .feat{
+      background: #FFFFFF;
+      border: 0.445322px solid rgba(0, 0, 0, 0.03);
+      box-shadow: 4.45322px 4.45322px 8.90645px rgba(0, 0, 0, 0.02);
+      border-radius: 4.45322px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .feat i{
+      color: var(--main-color);
+      
+    }
+    .feat h3{
+      color: var(--main-color);
+      text-align: center;
+
+    }
+    .feat p{
+      color: var(--secondary-color);
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .services .container :hover{
+      background: #f6f6f6;
+    }
+  
 
     /* Contact */
     .contact{
@@ -146,11 +195,17 @@ justify-content: flex-end;
       margin: 0 40px;
       text-align: center;
     }
+    .contact .info .label{
+      color: var(--section-background);
+      font-weight: 800;
+    }
+    .contact .info .link{
+      color: var(--secondary-color);
+      font-weight: 900;
+      text-decoration: none;
+    }
 
  
-
-
-
 
     /* Footer */
     footer{
@@ -160,6 +215,7 @@ justify-content: flex-end;
       text-align: center;
       font-size: 12px;
       height: 20px;
+      position: sticky;
 
     }
 
